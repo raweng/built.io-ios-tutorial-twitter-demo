@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7D99E5C118EAE3B3003D95E9"
                BuildableName = "TwitterDemo.app"
-               BlueprintName = "TwitterDemo"
-               ReferencedContainer = "container:TwitterDemo.xcodeproj">
+               BlueprintName = "BuiltTwitterLogin"
+               ReferencedContainer = "container:BuiltTwitterLogin.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7D99E5DC18EAE3B3003D95E9"
                BuildableName = "TwitterDemoTests.xctest"
-               BlueprintName = "TwitterDemoTests"
-               ReferencedContainer = "container:TwitterDemo.xcodeproj">
+               BlueprintName = "BuiltTwitterLoginTests"
+               ReferencedContainer = "container:BuiltTwitterLogin.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7D99E5C118EAE3B3003D95E9"
             BuildableName = "TwitterDemo.app"
-            BlueprintName = "TwitterDemo"
-            ReferencedContainer = "container:TwitterDemo.xcodeproj">
+            BlueprintName = "BuiltTwitterLogin"
+            ReferencedContainer = "container:BuiltTwitterLogin.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7D99E5C118EAE3B3003D95E9"
             BuildableName = "TwitterDemo.app"
-            BlueprintName = "TwitterDemo"
-            ReferencedContainer = "container:TwitterDemo.xcodeproj">
+            BlueprintName = "BuiltTwitterLogin"
+            ReferencedContainer = "container:BuiltTwitterLogin.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7D99E5C118EAE3B3003D95E9"
             BuildableName = "TwitterDemo.app"
-            BlueprintName = "TwitterDemo"
-            ReferencedContainer = "container:TwitterDemo.xcodeproj">
+            BlueprintName = "BuiltTwitterLogin"
+            ReferencedContainer = "container:BuiltTwitterLogin.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

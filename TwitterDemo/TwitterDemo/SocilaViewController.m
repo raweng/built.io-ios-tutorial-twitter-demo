@@ -38,12 +38,12 @@
 
 -(NSString *)consumerKey{
     //Put twitter consumer_key here
-    return @"6HcjyZmhuzROqGxSzjH4Q";
+    return @"cWtKD3N9ZbjBoomXvWNRwg";
 }
 
 -(NSString *)consumerSecret{
     //Put twitter consumer_secret here
-    return @"pn2M82Cp4SB091SpanVJf8yTZDUgGtcSJhz4jCD450";
+    return @"RWhNyelnMHTfQA5pfpCalASkNlBPlXDrEH9IQeZc";
 }
 
 -(void)didClickTwitterButton:(NSError *)error{

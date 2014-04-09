@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F79A5AA2-89CD-43DE-8813-DAD57FCD9F8D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TwitterDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>324D76A1-3271-4069-9DCF-8011CFBD15BA</key>
+		<string>https://github.com/raweng/built.io-ios-tutorial-twitter-demo.git</string>
+		<key>97CC7DEC-AF01-40CE-A47C-1892DBB25D12</key>
+		<string>https://github.com/raweng/built.io-ios-framework</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TwitterDemo/TwitterDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>324D76A1-3271-4069-9DCF-8011CFBD15BA</key>
+		<string>../../..</string>
+		<key>97CC7DEC-AF01-40CE-A47C-1892DBB25D12</key>
+		<string>../../../built.io-ios-framework</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/raweng/built.io-ios-tutorial-twitter-demo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>324D76A1-3271-4069-9DCF-8011CFBD15BA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>324D76A1-3271-4069-9DCF-8011CFBD15BA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>built</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>97CC7DEC-AF01-40CE-A47C-1892DBB25D12</string>
+			<key>IDESourceControlWCCName</key>
+			<string>built</string>
+		</dict>
+	</array>
+</dict>
+</plist>
