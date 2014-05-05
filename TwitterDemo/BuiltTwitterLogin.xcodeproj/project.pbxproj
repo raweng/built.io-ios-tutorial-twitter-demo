@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42E6496F1917E47B00A73775 /* BuiltIO.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42E6496D1917E47B00A73775 /* BuiltIO.bundle */; };
+		42E649701917E47B00A73775 /* BuiltIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E6496E1917E47B00A73775 /* BuiltIO.framework */; };
 		7D99E5C618EAE3B3003D95E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D99E5C518EAE3B3003D95E9 /* Foundation.framework */; };
 		7D99E5C818EAE3B3003D95E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D99E5C718EAE3B3003D95E9 /* CoreGraphics.framework */; };
 		7D99E5CA18EAE3B3003D95E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D99E5C918EAE3B3003D95E9 /* UIKit.framework */; };
@@ -29,8 +31,6 @@
 		7D99E62418EAE75D003D95E9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D99E62318EAE75D003D95E9 /* SystemConfiguration.framework */; };
 		7D99E62718EAF4D3003D95E9 /* SocilaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D99E62618EAF4D3003D95E9 /* SocilaViewController.m */; };
 		7D99E62A18EAF75C003D95E9 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D99E62918EAF75C003D95E9 /* DetailViewController.m */; };
-		7DA8B3D518EE876400B31161 /* BuiltIO.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7DA8B3D318EE876400B31161 /* BuiltIO.bundle */; };
-		7DA8B3D618EE876400B31161 /* BuiltIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA8B3D418EE876400B31161 /* BuiltIO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42E6496D1917E47B00A73775 /* BuiltIO.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = BuiltIO.bundle; path = "../built.io-ios-framework/BuiltIO.bundle"; sourceTree = "<group>"; };
+		42E6496E1917E47B00A73775 /* BuiltIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BuiltIO.framework; path = "../built.io-ios-framework/BuiltIO.framework"; sourceTree = "<group>"; };
 		7D99E5C218EAE3B3003D95E9 /* BuiltTwitterLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuiltTwitterLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D99E5C518EAE3B3003D95E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7D99E5C718EAE3B3003D95E9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -72,8 +74,6 @@
 		7D99E62618EAF4D3003D95E9 /* SocilaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocilaViewController.m; sourceTree = "<group>"; };
 		7D99E62818EAF75C003D95E9 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		7D99E62918EAF75C003D95E9 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		7DA8B3D318EE876400B31161 /* BuiltIO.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = BuiltIO.bundle; path = "../built.io-ios-framework/BuiltIO.bundle"; sourceTree = "<group>"; };
-		7DA8B3D418EE876400B31161 /* BuiltIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BuiltIO.framework; path = "../built.io-ios-framework/BuiltIO.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +89,7 @@
 				7D99E61A18EAE645003D95E9 /* CFNetwork.framework in Frameworks */,
 				7D99E61818EAE63A003D95E9 /* CoreTelephony.framework in Frameworks */,
 				7D99E61618EAE62E003D95E9 /* Security.framework in Frameworks */,
-				7DA8B3D618EE876400B31161 /* BuiltIO.framework in Frameworks */,
+				42E649701917E47B00A73775 /* BuiltIO.framework in Frameworks */,
 				7D99E61418EAE61F003D95E9 /* QuartzCore.framework in Frameworks */,
 				7D99E5C818EAE3B3003D95E9 /* CoreGraphics.framework in Frameworks */,
 				7D99E5CA18EAE3B3003D95E9 /* UIKit.framework in Frameworks */,
@@ -132,8 +132,8 @@
 		7D99E5C418EAE3B3003D95E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7DA8B3D318EE876400B31161 /* BuiltIO.bundle */,
-				7DA8B3D418EE876400B31161 /* BuiltIO.framework */,
+				42E6496D1917E47B00A73775 /* BuiltIO.bundle */,
+				42E6496E1917E47B00A73775 /* BuiltIO.framework */,
 				7D99E62318EAE75D003D95E9 /* SystemConfiguration.framework */,
 				7D99E62118EAE752003D95E9 /* Twitter.framework */,
 				7D99E61F18EAE749003D95E9 /* Social.framework */,
@@ -269,7 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DA8B3D518EE876400B31161 /* BuiltIO.bundle in Resources */,
+				42E6496F1917E47B00A73775 /* BuiltIO.bundle in Resources */,
 				7D99E5D018EAE3B3003D95E9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,7 +419,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"/Users/viresh/Desktop/raw_project/built\\ io\\ tutorials/Git_Tutorials/built.io-ios-tutorial-twitter-demo/built.io-ios-framework",
+					/Users/viresh/Desktop/raw_project/built,
+					io,
+					"tutorials/Git_Tutorials/built.io-ios-tutorial-twitter-demo/built.io-ios-framework",
+					/Users/sameer/Documents/iOS,
+					Projects/builtIO,
+					tutorial,
+					github/github,
+					"built/built.io-ios-tutorial-twitter-demo/built.io-ios-framework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TwitterDemo/BuiltTwitterLogin-Prefix.pch";
@@ -440,7 +447,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"/Users/viresh/Desktop/raw_project/built\\ io\\ tutorials/Git_Tutorials/built.io-ios-tutorial-twitter-demo/built.io-ios-framework",
+					/Users/viresh/Desktop/raw_project/built,
+					io,
+					"tutorials/Git_Tutorials/built.io-ios-tutorial-twitter-demo/built.io-ios-framework",
+					/Users/sameer/Documents/iOS,
+					Projects/builtIO,
+					tutorial,
+					github/github,
+					"built/built.io-ios-tutorial-twitter-demo/built.io-ios-framework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TwitterDemo/BuiltTwitterLogin-Prefix.pch";

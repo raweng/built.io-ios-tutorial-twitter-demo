@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>961C7414-9943-4A91-B567-3353E3DDC7E8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BuiltTwitterLogin</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>18E772D6-4741-49FB-AC6C-56826F8D95B4</key>
+		<string>https://github.com/raweng/built.io-ios-tutorial-twitter-demo.git</string>
+		<key>D7177F33-EE26-4D4B-BA73-30D1228F2AD5</key>
+		<string>https://github.com/raweng/built.io-ios-framework</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TwitterDemo/BuiltTwitterLogin.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>18E772D6-4741-49FB-AC6C-56826F8D95B4</key>
+		<string>../../..</string>
+		<key>D7177F33-EE26-4D4B-BA73-30D1228F2AD5</key>
+		<string>../../../built.io-ios-framework</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/raweng/built.io-ios-tutorial-twitter-demo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>18E772D6-4741-49FB-AC6C-56826F8D95B4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D7177F33-EE26-4D4B-BA73-30D1228F2AD5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>built.io-ios-framework</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>18E772D6-4741-49FB-AC6C-56826F8D95B4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>built.io-ios-tutorial-twitter-demo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
