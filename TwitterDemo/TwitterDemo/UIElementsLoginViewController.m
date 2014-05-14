@@ -4,14 +4,14 @@
 //
 
 
-#import "SocilaViewController.h"
+#import "UIElementsLoginViewController.h"
 #import "DetailViewController.h"
 
-@interface SocilaViewController ()
+@interface UIElementsLoginViewController ()
 
 @end
 
-@implementation SocilaViewController
+@implementation UIElementsLoginViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,6 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationController.navigationBarHidden = NO;
 }
 
 
@@ -54,6 +55,9 @@
 
 
 -(void)loginSuccessWithUser:(BuiltUser *)user{
+    if (user) {
+        [user saveSession];
+    }
     DetailViewController *detailVC = [[DetailViewController alloc]initWithNibName:nil bundle:nil];
     detailVC.currentUser = user;
     [self.navigationController pushViewController:detailVC animated:YES];

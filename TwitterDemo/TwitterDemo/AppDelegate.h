@@ -10,5 +10,7 @@
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, strong) UINavigationController *navigationController;
 
++(AppDelegate *)sharedAppDelegate;
+
 
 @end
