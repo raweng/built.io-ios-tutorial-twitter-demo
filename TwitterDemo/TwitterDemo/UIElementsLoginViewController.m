@@ -6,6 +6,7 @@
 
 #import "UIElementsLoginViewController.h"
 #import "DetailViewController.h"
+#import "Constants.h"
 
 @interface UIElementsLoginViewController ()
 
@@ -23,6 +24,12 @@
         self.fields = BuiltLoginFieldTwitter;
         self.shouldHandleLoadingHUD = YES;
 
+        if (iOS_VERSION >= 7) {
+            // iOS 7
+            self.edgesForExtendedLayout=UIRectEdgeNone;
+            self.extendedLayoutIncludesOpaqueBars=NO;
+            self.automaticallyAdjustsScrollViewInsets=NO;
+        }
     }
     return self;
 }

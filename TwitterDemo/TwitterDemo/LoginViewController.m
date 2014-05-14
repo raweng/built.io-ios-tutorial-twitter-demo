@@ -7,6 +7,7 @@
 #import <Accounts/Accounts.h>
 #import "DetailViewController.h"
 #import "AppDelegate.h"
+#import "Constants.h"
 
 @interface LoginViewController ()
 @property (nonatomic, strong)MBProgressHUD *progressHUD;
@@ -18,6 +19,12 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        if (iOS_VERSION >= 7) {
+            // iOS 7
+            self.edgesForExtendedLayout=UIRectEdgeNone;
+            self.extendedLayoutIncludesOpaqueBars=NO;
+            self.automaticallyAdjustsScrollViewInsets=NO;
+        }
         // Custom initialization
     }
     return self;
@@ -72,7 +79,7 @@
                 }];
             }else{
                 [self.progressHUD setLabelText:@"No Twitter Account Exists in Settings"];
-                [self.progressHUD hide:YES afterDelay:1.0];
+                [self.progressHUD hide:YES];
             }
         }else{
             [self.progressHUD setLabelText:@"Login Failed!!"];

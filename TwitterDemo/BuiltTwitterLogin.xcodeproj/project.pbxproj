@@ -19,6 +19,8 @@
 		4273E737192343E500775905 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273E736192343E500775905 /* LoginViewController.m */; };
 		4273E73A192344B600775905 /* LoginTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273E739192344B600775905 /* LoginTableViewController.m */; };
 		4273E73E1923519B00775905 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273E73D1923519B00775905 /* MBProgressHUD.m */; };
+		4273E74119237AC500775905 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273E74019237AC500775905 /* Constants.m */; };
+		4273E74319237E8A00775905 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4273E74219237E8A00775905 /* Images.xcassets */; };
 		42E6496F1917E47B00A73775 /* BuiltIO.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42E6496D1917E47B00A73775 /* BuiltIO.bundle */; };
 		42E649701917E47B00A73775 /* BuiltIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E6496E1917E47B00A73775 /* BuiltIO.framework */; };
 		7D99E5C618EAE3B3003D95E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D99E5C518EAE3B3003D95E9 /* Foundation.framework */; };
@@ -81,6 +83,9 @@
 		4273E739192344B600775905 /* LoginTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableViewController.m; sourceTree = "<group>"; };
 		4273E73C1923519B00775905 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		4273E73D1923519B00775905 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		4273E73F19237AC500775905 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		4273E74019237AC500775905 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		4273E74219237E8A00775905 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		42E6496D1917E47B00A73775 /* BuiltIO.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = BuiltIO.bundle; path = "../built.io-ios-framework/BuiltIO.bundle"; sourceTree = "<group>"; };
 		42E6496E1917E47B00A73775 /* BuiltIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BuiltIO.framework; path = "../built.io-ios-framework/BuiltIO.framework"; sourceTree = "<group>"; };
 		7D99E5C218EAE3B3003D95E9 /* BuiltTwitterLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuiltTwitterLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -239,6 +244,9 @@
 				4273E736192343E500775905 /* LoginViewController.m */,
 				4273E738192344B600775905 /* LoginTableViewController.h */,
 				4273E739192344B600775905 /* LoginTableViewController.m */,
+				4273E73F19237AC500775905 /* Constants.h */,
+				4273E74019237AC500775905 /* Constants.m */,
+				4273E74219237E8A00775905 /* Images.xcassets */,
 			);
 			path = TwitterDemo;
 			sourceTree = "<group>";
@@ -347,6 +355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4273E74319237E8A00775905 /* Images.xcassets in Resources */,
 				42E6496F1917E47B00A73775 /* BuiltIO.bundle in Resources */,
 				7D99E5D018EAE3B3003D95E9 /* InfoPlist.strings in Resources */,
 			);
@@ -375,6 +384,7 @@
 				4273E737192343E500775905 /* LoginViewController.m in Sources */,
 				4273E72C19233FA500775905 /* AFHTTPClient.m in Sources */,
 				4273E73319233FA500775905 /* AFXMLRequestOperation.m in Sources */,
+				4273E74119237AC500775905 /* Constants.m in Sources */,
 				7D99E62718EAF4D3003D95E9 /* UIElementsLoginViewController.m in Sources */,
 				7D99E5D618EAE3B3003D95E9 /* AppDelegate.m in Sources */,
 				7D99E5D218EAE3B3003D95E9 /* main.m in Sources */,
@@ -510,8 +520,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TwitterDemo/BuiltTwitterLogin-Prefix.pch";
 				INFOPLIST_FILE = "TwitterDemo/BuiltTwitterLogin-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = BuiltTwitterLogin;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -527,8 +539,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TwitterDemo/BuiltTwitterLogin-Prefix.pch";
 				INFOPLIST_FILE = "TwitterDemo/BuiltTwitterLogin-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = BuiltTwitterLogin;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
