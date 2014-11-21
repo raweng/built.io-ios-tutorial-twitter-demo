@@ -10,43 +10,43 @@
 	<string>BuiltTwitterLogin</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>18E772D6-4741-49FB-AC6C-56826F8D95B4</key>
-		<string>https://github.com/raweng/built.io-ios-tutorial-twitter-demo.git</string>
-		<key>D7177F33-EE26-4D4B-BA73-30D1228F2AD5</key>
+		<key>ACD166E1E08D0FB272C4B42C03503CFA623DE62B</key>
 		<string>https://github.com/raweng/built.io-ios-framework</string>
+		<key>D767E3AF9B61C50AE9D71D382F9CAF0BC7A9EE50</key>
+		<string>https://github.com/raweng/built.io-ios-tutorial-twitter-demo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TwitterDemo/BuiltTwitterLogin.xcodeproj/project.xcworkspace</string>
+	<string>TwitterDemo/BuiltTwitterLogin.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>18E772D6-4741-49FB-AC6C-56826F8D95B4</key>
+		<key>ACD166E1E08D0FB272C4B42C03503CFA623DE62B</key>
+		<string>../../..built.io-ios-framework</string>
+		<key>D767E3AF9B61C50AE9D71D382F9CAF0BC7A9EE50</key>
 		<string>../../..</string>
-		<key>D7177F33-EE26-4D4B-BA73-30D1228F2AD5</key>
-		<string>../../../built.io-ios-framework</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/raweng/built.io-ios-tutorial-twitter-demo.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>18E772D6-4741-49FB-AC6C-56826F8D95B4</string>
+	<string>D767E3AF9B61C50AE9D71D382F9CAF0BC7A9EE50</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>D7177F33-EE26-4D4B-BA73-30D1228F2AD5</string>
+			<string>D767E3AF9B61C50AE9D71D382F9CAF0BC7A9EE50</string>
 			<key>IDESourceControlWCCName</key>
-			<string>built.io-ios-framework</string>
+			<string>built.io-ios-tutorial-twitter-demo</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>18E772D6-4741-49FB-AC6C-56826F8D95B4</string>
+			<string>ACD166E1E08D0FB272C4B42C03503CFA623DE62B</string>
 			<key>IDESourceControlWCCName</key>
-			<string>built.io-ios-tutorial-twitter-demo</string>
+			<string>built.io-ios-tutorial-twitter-demobuilt.io-ios-framework</string>
 		</dict>
 	</array>
 </dict>
