@@ -52,7 +52,7 @@
     self.progressHUD.dimBackground = YES;
     [self.progressHUD setLabelText:@"Please wait..."];
     
-    BuiltUser *user = [BuiltUser user];
+    BuiltUser *user = [[AppDelegate sharedAppDelegate].bltApplication currentUser];
     
     ACAccountStore *accStore = [[ACAccountStore alloc]init];
     ACAccountType *accType = [accStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
@@ -64,18 +64,21 @@
             if ([arrayOfAccounts count] > 0)
             {
                 ACAccount *twitterAccount = [arrayOfAccounts lastObject];
-                [user loginWithTwitterAccount:twitterAccount consumerKey:@"cWtKD3N9ZbjBoomXvWNRwg" consumerSecret:@"RWhNyelnMHTfQA5pfpCalASkNlBPlXDrEH9IQeZc" onSuccess:^{
-                    [self.progressHUD setLabelText:@"Login Successful!!"];
-                    [self.progressHUD hide:YES afterDelay:1.0];
-                    
-                    [user saveSession];
-                    
-                    DetailViewController *detailsVC = [[DetailViewController alloc]initWithNibName:nil bundle:nil];
-                    [self.navigationController pushViewController:detailsVC animated:YES];
-                    
-                } onError:^(NSError *error) {
-                    [self.progressHUD setLabelText:@"Login Failed!!"];
-                    [self.progressHUD hide:YES afterDelay:1.0];
+                [user loginInBackgroundWithTwitterAccount:twitterAccount consumerKey:@"cWtKD3N9ZbjBoomXvWNRwg" consumerSecret:@"RWhNyelnMHTfQA5pfpCalASkNlBPlXDrEH9IQeZc" completion:^(ResponseType responseType, NSError *error) {
+                    if (error) {
+                        [self.progressHUD setLabelText:@"Login Failed!!"];
+                        [self.progressHUD hide:YES afterDelay:1.0];
+
+                    }else {
+                        [self.progressHUD setLabelText:@"Login Successful!!"];
+                        [self.progressHUD hide:YES afterDelay:1.0];
+                        
+                        [user setAsCurrentUser];
+                        
+                        DetailViewController *detailsVC = [[DetailViewController alloc]initWithNibName:nil bundle:nil];
+                        [self.navigationController pushViewController:detailsVC animated:YES];
+
+                    }
                 }];
             }else{
                 [self.progressHUD setLabelText:@"No Twitter Account Exists in Settings"];

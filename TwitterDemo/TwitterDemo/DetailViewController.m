@@ -46,7 +46,7 @@
 {
     [super viewDidLoad];
     
-    self.currentUser = [BuiltUser getSession];
+    self.currentUser = [[AppDelegate sharedAppDelegate].bltApplication currentUser];
     
     NSString *user = [[[[self.currentUser objectForKey:@"auth_data"] objectForKey:@"twitter"] objectForKey:@"user_profile"] objectForKey:@"screen_name"];
     NSLog(@"[self.currentUser objectForKey:@auth_data] %@",[self.currentUser objectForKey:@"auth_data"]);
@@ -55,8 +55,6 @@
     userNameTitle.textAlignment = NSTextAlignmentCenter;
     [userNameTitle setTextColor:[UIColor blackColor]];
     
-    
-    
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(130 , 170, 150, 150)];
     [imageView layer].cornerRadius = 10.0f;
     [imageView layer].masksToBounds = YES;
@@ -64,8 +62,6 @@
     NSString *imageURL = [[[[self.currentUser objectForKey:@"auth_data"]objectForKey:@"twitter"]objectForKey:@"user_profile"]objectForKey:@"profile_image_url"];
     imageURL = [imageURL stringByReplacingOccurrencesOfString:@"_normal" withString:@""];
     [imageView setImageWithURL:[NSURL URLWithString:imageURL]];
-//    [imageView setImage:[[UIImage alloc]initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:imageURL]]]];
-    
     
     userName = [[UILabel alloc] init];
     [userName setText:[NSString stringWithFormat:@"@%@",user]];
@@ -73,8 +69,6 @@
     [userName setBackgroundColor:[UIColor clearColor]];
     [userName setTextColor:[UIColor blackColor]];
     [userName setFrame:CGRectMake(0, imageView.frame.origin.y+imageView.frame.size.height, self.view.frame.size.width,  LABEL_HEIGHT)];
-    
-    
     
     [self.view addSubview:userNameTitle];
     [self.view addSubview:imageView];
@@ -87,8 +81,8 @@
     self.progressHUD.dimBackground = YES;
     [self.progressHUD setLabelText:@"Please Wait..."];
     
-    BuiltUser *user = [BuiltUser getSession];
-    [user clearSession];
+    BuiltUser *user = [[AppDelegate sharedAppDelegate].bltApplication currentUser];
+    [user removeFromCurrentUser];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.progressHUD hide:YES];
@@ -100,10 +94,7 @@
         
         UIViewController *viewController = [[AppDelegate sharedAppDelegate].navigationController.viewControllers objectAtIndex:0];
         [[AppDelegate sharedAppDelegate].navigationController popToViewController:viewController animated:YES];
-        
     });
-    
-    
 }
 
 - (void)didReceiveMemoryWarning

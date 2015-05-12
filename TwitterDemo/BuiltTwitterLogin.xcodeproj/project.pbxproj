@@ -41,6 +41,12 @@
 		7D99E62418EAE75D003D95E9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D99E62318EAE75D003D95E9 /* SystemConfiguration.framework */; };
 		7D99E62718EAF4D3003D95E9 /* UIElementsLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D99E62618EAF4D3003D95E9 /* UIElementsLoginViewController.m */; };
 		7D99E62A18EAF75C003D95E9 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D99E62918EAF75C003D95E9 /* DetailViewController.m */; };
+		FA231A621A9EFF3600434E36 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA231A611A9EFF3600434E36 /* libicucore.dylib */; };
+		FA231A641A9EFF4100434E36 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA231A631A9EFF4100434E36 /* libsqlite3.dylib */; };
+		FA231A661A9EFF4A00434E36 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA231A651A9EFF4A00434E36 /* libc++.dylib */; };
+		FA231A681A9EFF5100434E36 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA231A671A9EFF5100434E36 /* MobileCoreServices.framework */; };
+		FA231A6A1A9EFF5900434E36 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA231A691A9EFF5900434E36 /* CoreFoundation.framework */; };
+		FA231A6C1A9EFF5F00434E36 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA231A6B1A9EFF5F00434E36 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +117,12 @@
 		7D99E62618EAF4D3003D95E9 /* UIElementsLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIElementsLoginViewController.m; sourceTree = "<group>"; };
 		7D99E62818EAF75C003D95E9 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		7D99E62918EAF75C003D95E9 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		FA231A611A9EFF3600434E36 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		FA231A631A9EFF4100434E36 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		FA231A651A9EFF4A00434E36 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		FA231A671A9EFF5100434E36 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FA231A691A9EFF5900434E36 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		FA231A6B1A9EFF5F00434E36 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +137,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA231A6C1A9EFF5F00434E36 /* CoreData.framework in Frameworks */,
+				FA231A6A1A9EFF5900434E36 /* CoreFoundation.framework in Frameworks */,
+				FA231A681A9EFF5100434E36 /* MobileCoreServices.framework in Frameworks */,
+				FA231A661A9EFF4A00434E36 /* libc++.dylib in Frameworks */,
+				FA231A641A9EFF4100434E36 /* libsqlite3.dylib in Frameworks */,
+				FA231A621A9EFF3600434E36 /* libicucore.dylib in Frameworks */,
 				7D99E62418EAE75D003D95E9 /* SystemConfiguration.framework in Frameworks */,
 				7D99E62218EAE752003D95E9 /* Twitter.framework in Frameworks */,
 				7D99E62018EAE749003D95E9 /* Social.framework in Frameworks */,
@@ -218,6 +236,12 @@
 		7D99E5C418EAE3B3003D95E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA231A6B1A9EFF5F00434E36 /* CoreData.framework */,
+				FA231A691A9EFF5900434E36 /* CoreFoundation.framework */,
+				FA231A671A9EFF5100434E36 /* MobileCoreServices.framework */,
+				FA231A651A9EFF4A00434E36 /* libc++.dylib */,
+				FA231A631A9EFF4100434E36 /* libsqlite3.dylib */,
+				FA231A611A9EFF3600434E36 /* libicucore.dylib */,
 				42E6496D1917E47B00A73775 /* BuiltIO.bundle */,
 				42E6496E1917E47B00A73775 /* BuiltIO.framework */,
 				7D99E62318EAE75D003D95E9 /* SystemConfiguration.framework */,
@@ -586,6 +610,7 @@
 				23968E211A1F4FBB00C0B830 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D99E5BD18EAE3B3003D95E9 /* Build configuration list for PBXProject "BuiltTwitterLogin" */ = {
 			isa = XCConfigurationList;

@@ -63,7 +63,7 @@
 
 -(void)loginSuccessWithUser:(BuiltUser *)user{
     if (user) {
-        [user saveSession];
+        [user removeFromCurrentUser];
     }
     DetailViewController *detailVC = [[DetailViewController alloc]initWithNibName:nil bundle:nil];
     detailVC.currentUser = user;

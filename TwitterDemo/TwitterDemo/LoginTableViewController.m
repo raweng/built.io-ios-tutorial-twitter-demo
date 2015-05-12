@@ -9,7 +9,7 @@
 #import "LoginTableViewController.h"
 #import "LoginViewController.h"
 #import "UIElementsLoginViewController.h"
-
+#import "AppDelegate.h"
 @interface LoginTableViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong)NSArray *loginOptions;
@@ -36,13 +36,6 @@
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
-//    [self.tableView reloadData];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,7 +48,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"numberOfRowsInSection %d",self.loginOptions.count);
+    NSLog(@"numberOfRowsInSection %ld",self.loginOptions.count);
     // Return the number of rows in the section.
     return self.loginOptions.count;
 }
@@ -63,13 +56,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"cellForRowAtIndexPath %d",indexPath.row);
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    NSLog(@"celllllllllll %@",cell);
     
     cell.textLabel.text = [self.loginOptions objectAtIndex:indexPath.row];
     
@@ -79,10 +70,11 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"didSelectRowAtIndexPath %d",indexPath.row);
+    NSLog(@"didSelectRowAtIndexPath %ld",indexPath.row);
     
     if (indexPath.row == 0) {
         UIElementsLoginViewController *uieleloginVC = [[UIElementsLoginViewController alloc]initWithNibName:nil bundle:nil];
+        uieleloginVC.builtApplication = [AppDelegate sharedAppDelegate].bltApplication;
         [self.navigationController pushViewController:uieleloginVC animated:YES];
     }else{
         LoginViewController *loginVC = [[LoginViewController alloc]initWithNibName:nil bundle:nil];

@@ -10,19 +10,19 @@
 #import "LoginTableViewController.h"
 
 // ****************************************************************************
-// TwitterDemo app gives Login with Built.io
+// TwitterDemo app gives Login with Built.io Backend
 // ****************************************************************************
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //Sets the api key and application uid of your application
-    [Built initializeWithApiKey:@"blt1a95a895b54dd365" andUid:@"builttwitter"];
+    //Sets the api key of your application
+    self.bltApplication = [Built applicationWithAPIKey:@"blt1a95a895b54dd365"];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
 
-    BuiltUser *user = [BuiltUser getSession];
+    BuiltUser *user = [self.bltApplication currentUser];
     
     if (user != nil) {
         DetailViewController *detailsVC = [[DetailViewController alloc]initWithNibName:nil bundle:nil];
